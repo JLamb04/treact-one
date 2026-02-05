@@ -360,7 +360,7 @@ TESTIMONIALS ↓
     display: flex;
     flex-direction: column;
 }
-.testimonials__grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; width: 100%; }
+.testimonials__grid { display: flex; flex-wrap: wrap; gap: 24px; width: 50%; }
 .testimonial { border-radius: 8px; padding: 16px; background: #fff; }
 .testimonial__avatar { width: 48px; height: 48px; border-radius: 999px; margin-bottom: 12px; object-fit: cover; }
 .testimonial__text { color: #4a5568 }
