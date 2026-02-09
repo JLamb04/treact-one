@@ -40,6 +40,9 @@ section {
 main {
     margin-bottom: 96px;
 }
+img { 
+    width: 100%;
+}
 
 
 /* 
@@ -358,10 +361,13 @@ TESTIMONIALS ↓
 
 #testimonials .row {
     display: flex;
-    flex-direction: column;
-    width: 50%;
 }
-.testimonials__grid { display: flex; gap: 24px;}
+
+.testimonmials__img--wrapper,
+.testimonial__right { 
+   width: 50%; 
+}
+
 .testimonial { border-radius: 8px; padding: 16px; background: #fff; }
 .testimonial__avatar { width: 48px; height: 48px; border-radius: 999px; margin-bottom: 12px; object-fit: cover; }
 .testimonial__text { color: #4a5568 }
@@ -397,14 +403,18 @@ START / CALL TO ACTION ↓
 
 /* Responsive */
 @media (max-width: 1024px) {
-  .features__grid, .pricing__grid, .testimonials__grid { grid-template-columns: repeat(2, 1fr);}
+  .features__grid, 
+  .pricing__grid,
+    .values__grid {
+     grid-template-columns: repeat(2, 1fr);
+}
 }
 
 @media (max-width: 768px) {
   .nav__links { display: none; margin-bottom: 24px; }
   .btn__menu { display: block; }
   header .row, #quality .row, #steps .row, #values .row { flex-direction: column; gap: 24px;}
-  .features__grid, .pricing__grid, .testimonials__grid, .values__grid { grid-template-columns: 1fr; }
+  .features__grid, .pricing__grid, .values__grid { grid-template-columns: 1fr; }
 }
 
 
