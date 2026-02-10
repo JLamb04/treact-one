@@ -197,6 +197,7 @@ header .row {
     font-size: 40px;
     text-align: center;
     font-weight: 800;
+    margin-bottom: 24px;
 }
 .section__subtitle {
     max-width: 720px;
@@ -369,12 +370,15 @@ TESTIMONIALS ↓
 }
 
 .testimonial { border-radius: 8px; padding: 16px; background: #fff; }
-.testimonial__avatar { width: 48px; height: 48px; border-radius: 999px; margin-bottom: 12px; object-fit: cover; }
+.testimonial__avatar { width: 48px; height: 48px; border-radius: 999px; margin-top: 24px; object-fit: cover; }
 .testimonial__text { color: #4a5568 }
 
 .testimonial__image--img { 
     width: 50%;
-    
+}
+
+.testimonial__stars { 
+    margin-bottom: 24px;
 }
 
 
