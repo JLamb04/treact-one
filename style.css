@@ -214,6 +214,19 @@ header .row {
 .header__illustration { max-width: 600px; }
 .header__img { width: 100%; border-radius: 8px; }
 
+.header__email--input { 
+    width: 100%;
+    border-radius: 500px;
+    border: 2px solid rgb(229, 231, 235);
+    padding: 20px 192px 20px 32px;
+    color: rgb (36, 62, 99);
+    font-size: 16px; 
+    font-weight: 500; 
+    position: absolute;
+    z-index: 1; 
+    transition: border-color 300ms;
+}
+
 
 /* 
 
@@ -395,7 +408,7 @@ TESTIMONIALS ↓
    font-weight: 700;
 }
 
-.testimonial__button {  
+.testimonial__buttons {  
     display: flex; 
     justify-content: center;
     align-items: center;
