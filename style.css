@@ -209,22 +209,15 @@ header .row {
 
 /* Header */
 .header__content { max-width: 560px; }
-.header__actions { margin-top: 24px; display: flex; gap: 12px; }
+.header__actions { margin-top: 24px; display: flex; gap: 12px; position: relative; justify-content: flex-end; }
 .customers { margin-top: 24px; max-width: 420px; opacity: 0.75; }
 .header__illustration { max-width: 600px; }
 .header__img { width: 100%; border-radius: 8px; }
 
-.header__email--input { 
-    width: 100%;
-    border-radius: 500px;
-    border: 2px solid rgb(229, 231, 235);
-    padding: 20px 192px 20px 32px;
-    color: rgb (36, 62, 99);
-    font-size: 16px; 
-    font-weight: 500; 
-    position: absolute;
-    z-index: 1; 
-    transition: border-color 300ms;
+
+.header__actions, 
+__input--email{ 
+    height: 68px;
 }
 
 .header__email--input { 
