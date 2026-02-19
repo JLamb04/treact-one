@@ -227,6 +227,37 @@ header .row {
     transition: border-color 300ms;
 }
 
+.header__email--input { 
+   width: 100%; 
+   color: rgb(36, 62, 99);
+   font-size: 16px; 
+    font-weight: 500;
+    position: absolute;
+    z-index: 1; 
+    border-radius: 500px; 
+    border-width: 2px; 
+    border-color: rgb(229, 231, 235);
+    border-image: initial; 
+    padding: 20px 192px 20px 32px;
+    transition: border-color 300ms; 
+}
+
+.header__email--btn {
+    z-index: 2;
+    height: calc(100% - 16px);
+    width: 160px;
+    background-color: rgb(100, 21, 255);
+    color: rgb(255, 255, 255);
+    font-weight: 700;
+    font-size: 16px; 
+    margin: 8px; 
+    border-radius: 500px; 
+    border-width: initial;
+    border-style: none;
+    border-color: initial;
+    border-image: initial;
+    transition: 300ms;
+}
 
 /* 
 
@@ -431,6 +462,7 @@ TESTIMONIALS ↓
 
 .testimonial__buttons { 
     display: flex; 
+    margin-left: 24px;
 }
 
 
