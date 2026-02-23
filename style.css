@@ -216,17 +216,17 @@ header .row {
 
 
 .header__actions, 
-__input--email{ 
+.header__input--email{ 
     height: 68px;
 }
 
-.header__email--input { 
+.header__input--email { 
    width: 100%; 
    color: rgb(36, 62, 99);
    font-size: 16px; 
     font-weight: 500;
+    z-index: 1;
     position: absolute;
-    z-index: 1; 
     border-radius: 500px; 
     border-width: 2px; 
     border-color: rgb(229, 231, 235);
@@ -489,16 +489,44 @@ START / CALL TO ACTION ↓
     position: relative;
     overflow: hidden;
 }
-.start__band { width: 100%; display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 24px; border-radius: 8px; background: #6415ff; }
+.start__container { width: 100%;
+     display: flex;
+      align-items: center;
+       justify-content: space-between;
+        gap: 16px;
+         padding: 24px;
+          border-radius: 8px;
+           background: #6415ff;
+         }
+         
 .start__title { color: #fff; font-size: 24px; font-weight: 800; }
 
 /* Footer */
 .footer__row { display: flex; flex-direction: column; align-items: center; gap: 12px; padding: 32px 0; }
 .footer__links { display: flex; gap: 16px; list-style: none; }
-.footer__link { color: #1a202c; text-decoration: none; font-weight: 600; }
+.footer__link { color: #f7fafc; font-size: 14px; margin-top: 12px; line-height: 1.5; font-weight: 500; position: relative; cursor: pointer; }
 .footer__copy { color: #718096; font-size: 14px; }
 .nav__links { display: flex; align-items: center; gap: 16px; list-style: none; }
 .nav__link { text-decoration: none; font-weight: 600; margin-right: 32px; margin-bottom: 24px; }
+
+.row__footer--row { 
+    display: flex; 
+}
+
+.footer__column--link { 
+    color: #f7fafc; 
+    font-size: 14px; 
+    margin-top: 12px; 
+    font-weight: 500; 
+    position: relative; 
+    cursor: pointer; 
+}
+
+.footer__colomn--title { 
+    font-weight: 700; 
+    color: #f7fafc; 
+    line-height: 1.5;
+}
 
 /* Responsive */
 @media (max-width: 1024px) {
@@ -546,11 +574,12 @@ MOBILE RESPONSIVENESS ↓
     }
 }
 
+.nav__links { 
+    display: none;
+}
+
 @media (max-width: 1024px) {
 
-    .btn__menu {
-        display: block;
-    }
     header .row {
         flex-direction: column;
         align-items: center;
@@ -615,7 +644,12 @@ section { padding: 80px 0; }
     background-color: #f56565;
 }
 
-.row { gap: 24px; }
+.row {
+     gap: 24px; 
+        display: flex;
+    }
+
+   
 
 @media (max-width: 1024px) {
   .heading { font-size: 48px; }
