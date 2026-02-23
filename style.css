@@ -513,6 +513,17 @@ START / CALL TO ACTION ↓
     display: flex; 
 }
 
+.footer__columns { 
+    display: flex; 
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.footer__colomn { 
+    display: flex;
+    flex-direction: column;
+}
+
 .footer__column--link { 
     color: #f7fafc; 
     font-size: 14px; 
@@ -558,6 +569,7 @@ footer {
     margin-bottom: -32px;
     position: relative;
     overflow: hidden;
+    display: flex;
 }
 
 
