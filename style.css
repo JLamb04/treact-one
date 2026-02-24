@@ -569,9 +569,14 @@ START / CALL TO ACTION ↓
     align-items: center;
 }
 
+.footer__social--link svg { 
+ height: 16px; 
+ width: 16px;    
+}
+
 .footer__logo--img { 
- height: 32px; 
- width: 32px;    
+    width: 32px; 
+    height: 32px;
 }
 
 .footer__logo--text { 
