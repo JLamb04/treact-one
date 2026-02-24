@@ -516,10 +516,10 @@ START / CALL TO ACTION ↓
 .footer__columns { 
     display: flex; 
     justify-content: space-between;
-    flex-direction: column;
+    width: 100%;
 }
 
-.footer__colomn { 
+.footer__column { 
     display: flex;
     flex-direction: column;
 }
