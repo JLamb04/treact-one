@@ -108,21 +108,19 @@ nav {
 }
 
 .modal__links {
-    width: 100%;
-    height: 100%;
     display: flex;
-    flex-direction: column;
     align-items: center;
+    padding-bottom: 2px; 
 }
 
 .modal__link {
-    color: #1a202c;
-    font-size: 18px;
-    font-weight: 600;
-    line-height: 1.5;
-    margin: 8px 0;
-    padding-bottom: 4px;
-    border-bottom: 2px solid transparent;
+  font-size: 14px; 
+  font-weight: 600; 
+  padding-top: 4px; 
+  letter-spacing: 0.35px; 
+  border-bottom: 2px solid transparent; 
+  position: relative; 
+  transition: all 300ms;
 }
 
 .modal__link--primary {
